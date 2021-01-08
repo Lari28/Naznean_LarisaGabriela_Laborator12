@@ -8,11 +8,11 @@ using System.Net.Http;
 
 namespace Naznean_LarisaGabriela_Laborator12.Data
 {
-    public class RestService
+    public class RestService: IRestService
     {
         HttpClient client;
         //se va modifica ulterior cu ip-ul si portul corespunzator
-        string RestUrl = "https://192.168.0.200:45456/api/shoplists/{0}";
+        string RestUrl = "https://192.168.0.123:45456/api/shoplists/{0}";
         public List<ShopList> Items { get; private set; }
         public RestService()
         {
